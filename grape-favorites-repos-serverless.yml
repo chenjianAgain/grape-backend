@@ -1,4 +1,4 @@
-service: grape-favorites-repo-serverless
+service: repos
 
 frameworkVersion: ">=1.1.0 <2.0.0"
 
