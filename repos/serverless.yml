@@ -20,7 +20,7 @@ provider:
 
 functions:
   create:
-    handler: repos/create.create
+    handler: create.create
     events:
       - http:
           path: repos
@@ -28,7 +28,7 @@ functions:
           cors: true
 
   list:
-    handler: repos/list.list
+    handler: list.list
     events:
       - http:
           path: repos
@@ -36,7 +36,7 @@ functions:
           cors: true
 
   get:
-    handler: repos/get.get
+    handler: get.get
     events:
       - http:
           path: repos/{id}
@@ -44,7 +44,7 @@ functions:
           cors: true
 
   update:
-    handler: repos/update.update
+    handler: update.update
     events:
       - http:
           path: repos/{id}
@@ -52,7 +52,7 @@ functions:
           cors: true
 
   delete:
-    handler: repos/delete.delete
+    handler: delete.delete
     events:
       - http:
           path: repos/{id}
